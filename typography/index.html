@@ -230,6 +230,7 @@
         </symbol>
     </defs>
 </svg>
+
         <header class="head">
             <div class="row">
     <a href="/" class="logo noline">
@@ -280,6 +281,13 @@
                 <li>
                     <a href="/typography">Typography</a>
                 </li>
+                <li class="parent"><a href="#">Drop Example</a>
+                    <ul>
+                        <li><a href="/child1">child</a></li>
+                        <li><a href="/child2">child</a></li>
+                        <li><a href="/child3">child</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <nav class="iconnav">
@@ -291,24 +299,24 @@
                     <li class="social">
                         <a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a>
                     </li>
-
+                
                 
                     <li class="social">
                         <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
                     </li>
                 
 
-
+                
                     <li class="social">
                         <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                     </li>
+                
 
-
-
+                
                     <li class="social">
                         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                     </li>
-
+                
 
                 
                     <li class="social">
@@ -316,17 +324,17 @@
                     </li>
                 
 
-
+                
                     <li class="social">
                         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
                     </li>
+                
 
-
-
+                
                     <li class="social">
                         <a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a>
                     </li>
-
+                
 
                 
                     <li class="social">
@@ -343,10 +351,11 @@
 
         </header>
         <div id="search">
-            <form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <input type="search" value="" name="s" id="s" placeholder="Search"/>
-            </form>
-        </div>
+    <form role="search" id="searchform">
+        <input type="search" placeholder="Search"/>
+    </form>
+</div>
+
         <section class="margin">
             <div class="content">
                 <div class="content_container">
@@ -377,7 +386,7 @@
 
 <p>some <strong>bold</strong> and <em>italic</em> text and a <a href="/">link</a> that brings you back to the home page and a paragraph of lorem ipsum.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo nam commodi eos cumque possimus error cupiditate iste doloribus aut porro, beatae impedit, corporis sapiente laudantium id voluptatem sit distinctio sed sequi accusantium molestias, facilis sunt eum? Voluptates sit numquam, recusandae deleniti illo, nisi maxime sequi eligendi ad veniam quidem molestias aut assumenda doloremque delectus modi animi. Sint asperiores minus ducimus aut aliquid eos pariatur, id doloribus rem natus quam, adipisci reprehenderit? Architecto quis dignissimos porro pariatur impedit at odio illo ab sunt obcaecati eius consectetur distinctio, eligendi fuga sint fugit aspernatur ratione blanditiis veniam voluptates? Delectus magni optio voluptate odit incidunt nobis officiis mollitia fuga libero, reprehenderit fugit. </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo nam commodi eos cumque possimus error cupiditate iste doloribus aut porro, beatae impedit, corporis sapiente laudantium id voluptatem sit distinctio sed sequi accusantium molestias, facilis sunt eum? Voluptates sit numquam, recusandae deleniti illo, nisi maxime sequi eligendi ad veniam quidem molestias aut assumenda doloremque delectus modi animi. Sint asperiores minus ducimus aut aliquid eos pariatur, id doloribus rem natus quam, adipisci reprehenderit? Architecto quis dignissimos porro pariatur impedit at odio illo ab sunt obcaecati eius consectetur distinctio, eligendi fuga sint fugit aspernatur ratione blanditiis veniam voluptates? Delectus magni optio voluptate odit incidunt nobis officiis mollitia fuga libero, reprehenderit fugit.</p>
 
 <p>Hic eos earum ipsum, reprehenderit, ut facere officiis vitae voluptas sunt atque quisquam, nobis deleniti sapiente laudantium quia libero nulla rerum beatae mollitia iusto similique! Nesciunt illo, harum facilis aperiam commodi. Amet perferendis voluptatem, itaque laboriosam, eos minima vero tempore at!</p>
 
@@ -412,18 +421,17 @@
 <p><br /></p>
 
 <h6 id="code">code</h6>
-<p>You can show inline code (a link in markdown: <code class="highlighter-rouge">[linktext](url)</code>)</p>
+<p>You can show inline code (a link in markdown: <code>[linktext](url)</code>)</p>
 
 <p>or a whole block</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="nt">blockquote</span><span class="p">{</span>
-    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">5%</span><span class="p">;</span>
-    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
-    <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
-    <span class="nl">border-left</span><span class="p">:</span> <span class="nv">$line</span><span class="p">;</span>
-<span class="p">}</span>
+<pre><code class="language-scss">blockquote{
+    margin-left: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: $line;
+}
 </code></pre>
-</div>
 
                         </div>
                     </article>
@@ -435,9 +443,13 @@
             
             
                 
-                    <li><a href="/category/lifestyle">lifestyle</a></li>
+                    <li><a href="/category/video">video</a></li>
                 
-                    <li><a href="/category/photography">photography</a></li>
+                    <li><a href="/category/image">image</a></li>
+                
+                    <li><a href="/category/audio">audio</a></li>
+                
+                    <li><a href="/category/standard">standard</a></li>
                 
             
             
@@ -449,11 +461,19 @@
             
             
                 
-                    <li><a href="/tag/one">one</a></li>
+                    <li><a href="/tag/video">video</a></li>
                 
-                    <li><a href="/tag/two">two</a></li>
+                    <li><a href="/tag/iframe">iframe</a></li>
                 
-                    <li><a href="/tag/three">three</a></li>
+                    <li><a href="/tag/gallery">gallery</a></li>
+                
+                    <li><a href="/tag/image">image</a></li>
+                
+                    <li><a href="/tag/music">music</a></li>
+                
+                    <li><a href="/tag/soundcloud">soundcloud</a></li>
+                
+                    <li><a href="/tag/text">text</a></li>
                 
             
             

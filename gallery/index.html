@@ -230,6 +230,7 @@
         </symbol>
     </defs>
 </svg>
+
         <header class="head">
             <div class="row">
     <a href="/" class="logo noline">
@@ -280,6 +281,13 @@
                 <li>
                     <a href="/typography">Typography</a>
                 </li>
+                <li class="parent"><a href="#">Drop Example</a>
+                    <ul>
+                        <li><a href="/child1">child</a></li>
+                        <li><a href="/child2">child</a></li>
+                        <li><a href="/child3">child</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <nav class="iconnav">
@@ -291,24 +299,24 @@
                     <li class="social">
                         <a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a>
                     </li>
-
+                
                 
                     <li class="social">
                         <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
                     </li>
                 
 
-
+                
                     <li class="social">
                         <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                     </li>
+                
 
-
-
+                
                     <li class="social">
                         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                     </li>
-
+                
 
                 
                     <li class="social">
@@ -316,17 +324,17 @@
                     </li>
                 
 
-
+                
                     <li class="social">
                         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
                     </li>
+                
 
-
-
+                
                     <li class="social">
                         <a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a>
                     </li>
-
+                
 
                 
                     <li class="social">
@@ -343,17 +351,18 @@
 
         </header>
         <div id="search">
-            <form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <input type="search" value="" name="s" id="s" placeholder="Search"/>
-            </form>
-        </div>
+    <form role="search" id="searchform">
+        <input type="search" placeholder="Search"/>
+    </form>
+</div>
+
         <section class="margin">
             <div class="content">
                 <div class="content_container">
                     <article>
                         
                             
-                                <img src="/imggalleries/gallery-standard-post/5.jpg" alt="galleries/gallery-standard-post/5.jpg">
+                                <img class="featimg" src="/img/galleries/gallery-standard-post/5.jpg" alt="galleries/gallery-standard-post/5.jpg">
                             
                         
 
@@ -383,7 +392,50 @@
                         </div>
                         
                         <div class="post_content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusamus quisquam repellendus reiciendis rem, fuga rerum ratione, cumque quaerat ut impedit mollitia repudiandae quas sit molestias, soluta quasi asperiores eligendi? Quidem id praesentium impedit, a, in consequatur. Numquam architecto tempora accusamus sed harum voluptatum, optio unde, quisquam nobis possimus error tenetur ipsa atque eos doloribus, labore reiciendis voluptatibus blanditiis? Natus minus iure cupiditate sequi, tenetur recusandae similique corrupti quaerat incidunt adipisci facilis voluptatem sed fuga molestiae dolore, sapiente eos, perferendis!</p>
+                            <p>Here you’ll find a simple gallery, that just adds all of the images at full-width directly in the post content.</p>
+
+<p>Galleries are defined in a data-sheet, set type and gallery-id in front matter and include <code>gallery.html</code> within the content.<br />
+<br /></p>
+
+<h6 id="datagalleriesyml">_data/galleries.yml</h6>
+
+<pre><code class="language-yml">- id: gallery
+  imagefolder: /img/galleries/gallery-standard-post
+  images:
+  - filename: 1.jpg
+    alttext: Bloom Flat
+  - filename: 2.jpg
+    alttext: Bloom
+  - filename: 3.jpg
+    alttext: Blossom in a Star
+  - filename: 4.jpg
+    alttext: Blossom
+  - filename: 5.jpg
+    alttext: Bubbly Bloom
+  - filename: 6.jpg
+    alttext: Rays of Gold
+  - filename: 7.jpg
+    alttext: Exotic
+  - filename: 8.jpg
+    alttext: Filled out
+</code></pre>
+<p><br /></p>
+
+<h6 id="front-matter">front matter</h6>
+
+<pre><code class="language-yml">---
+type: gallery
+gallery-id: gallery
+---
+</code></pre>
+<p><br /></p>
+
+<h6 id="post-content">post content</h6>
+
+<pre><code class="language-liquid">
+{% include gallery.html %}
+
+</code></pre>
 
 <div class="gallery">
     
@@ -415,8 +467,6 @@
 
 
 
-        
-
 </div>
 
                         </div>
@@ -425,18 +475,16 @@
                             
                             <p class="category">
                                 <span class="name">Categories:</span>
-                                <a class='category' href='/category/lifestyle/'>lifestyle</a>
+                                <a class='category' href='/category/image/'>image</a>
                             </p>
                             
                             
                             <p class="tags">
                                 <span class="name">Tags:</span>
                                 
-                                    <a href="/tag/one">one</a>
+                                    <a href="/tag/gallery">gallery</a>
                                 
-                                    <a href="/tag/two">two</a>
-                                
-                                    <a href="/tag/three">three</a>
+                                    <a href="/tag/image">image</a>
                                 
                             </p>
                             
@@ -459,9 +507,13 @@
             
             
                 
-                    <li><a href="/category/lifestyle">lifestyle</a></li>
+                    <li><a href="/category/video">video</a></li>
                 
-                    <li><a href="/category/photography">photography</a></li>
+                    <li><a href="/category/image">image</a></li>
+                
+                    <li><a href="/category/audio">audio</a></li>
+                
+                    <li><a href="/category/standard">standard</a></li>
                 
             
             
@@ -473,11 +525,19 @@
             
             
                 
-                    <li><a href="/tag/one">one</a></li>
+                    <li><a href="/tag/video">video</a></li>
                 
-                    <li><a href="/tag/two">two</a></li>
+                    <li><a href="/tag/iframe">iframe</a></li>
                 
-                    <li><a href="/tag/three">three</a></li>
+                    <li><a href="/tag/gallery">gallery</a></li>
+                
+                    <li><a href="/tag/image">image</a></li>
+                
+                    <li><a href="/tag/music">music</a></li>
+                
+                    <li><a href="/tag/soundcloud">soundcloud</a></li>
+                
+                    <li><a href="/tag/text">text</a></li>
                 
             
             

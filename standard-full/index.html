@@ -230,6 +230,7 @@
         </symbol>
     </defs>
 </svg>
+
         <header class="head">
             <div class="row">
     <a href="/" class="logo noline">
@@ -280,6 +281,13 @@
                 <li>
                     <a href="/typography">Typography</a>
                 </li>
+                <li class="parent"><a href="#">Drop Example</a>
+                    <ul>
+                        <li><a href="/child1">child</a></li>
+                        <li><a href="/child2">child</a></li>
+                        <li><a href="/child3">child</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <nav class="iconnav">
@@ -291,24 +299,24 @@
                     <li class="social">
                         <a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a>
                     </li>
-
+                
                 
                     <li class="social">
                         <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
                     </li>
                 
 
-
+                
                     <li class="social">
                         <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                     </li>
+                
 
-
-
+                
                     <li class="social">
                         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                     </li>
-
+                
 
                 
                     <li class="social">
@@ -316,17 +324,17 @@
                     </li>
                 
 
-
+                
                     <li class="social">
                         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
                     </li>
+                
 
-
-
+                
                     <li class="social">
                         <a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a>
                     </li>
-
+                
 
                 
                     <li class="social">
@@ -343,10 +351,11 @@
 
         </header>
         <div id="search">
-            <form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <input type="search" value="" name="s" id="s" placeholder="Search"/>
-            </form>
-        </div>
+    <form role="search" id="searchform">
+        <input type="search" placeholder="Search"/>
+    </form>
+</div>
+
         <section class="margin">
             <div class="content full">
                 <div class="content_container">
@@ -379,11 +388,17 @@
                         </div>
                         
                             
-                                <img src="/img2.jpg" alt="2.jpg">
+                                <img class="featimg" src="/img/2.jpg" alt="2.jpg">
                             
                         
                         <div class="post_content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusamus quisquam repellendus reiciendis rem, fuga rerum ratione, cumque quaerat ut impedit mollitia repudiandae quas sit molestias, soluta quasi asperiores eligendi? Quidem id praesentium impedit, a, in consequatur. Numquam architecto tempora accusamus sed harum voluptatum, optio unde, quisquam nobis possimus error tenetur ipsa atque eos doloribus, labore reiciendis voluptatibus blanditiis? Natus minus iure cupiditate sequi, tenetur recusandae similique corrupti quaerat incidunt adipisci facilis voluptatem sed fuga molestiae dolore, sapiente eos, perferendis!</p>
+                            <p>a standard post displayed at full-width, only requires a layout, variable.<br />
+The featured image will be added at the beginning of the content, but not above it, as in an image post.</p>
+
+<pre><code class="language-yml">---
+layout: post_full
+---
+</code></pre>
 
                         </div>
                         
@@ -391,18 +406,14 @@
                             
                             <p class="category">
                                 <span class="name">Categories:</span>
-                                <a class='category' href='/category/lifestyle/'>lifestyle</a>
+                                <a class='category' href='/category/standard/'>standard</a>
                             </p>
                             
                             
                             <p class="tags">
                                 <span class="name">Tags:</span>
                                 
-                                    <a href="/tag/one">one</a>
-                                
-                                    <a href="/tag/two">two</a>
-                                
-                                    <a href="/tag/three">three</a>
+                                    <a href="/tag/text">text</a>
                                 
                             </p>
                             

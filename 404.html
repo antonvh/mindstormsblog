@@ -230,6 +230,7 @@
         </symbol>
     </defs>
 </svg>
+
        <header class="head">
            <div class="row">
     <a href="/" class="logo noline">
@@ -280,6 +281,13 @@
                 <li>
                     <a href="/typography">Typography</a>
                 </li>
+                <li class="parent"><a href="#">Drop Example</a>
+                    <ul>
+                        <li><a href="/child1">child</a></li>
+                        <li><a href="/child2">child</a></li>
+                        <li><a href="/child3">child</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <nav class="iconnav">
@@ -291,24 +299,24 @@
                     <li class="social">
                         <a href="#" class="tumblr"><i class="fa fa-tumblr"></i></a>
                     </li>
-
+                
                 
                     <li class="social">
                         <a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
                     </li>
                 
 
-
+                
                     <li class="social">
                         <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                     </li>
+                
 
-
-
+                
                     <li class="social">
                         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                     </li>
-
+                
 
                 
                     <li class="social">
@@ -316,17 +324,17 @@
                     </li>
                 
 
-
+                
                     <li class="social">
                         <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
                     </li>
+                
 
-
-
+                
                     <li class="social">
                         <a href="#" class="vimeo"><i class="fa fa-vimeo-square"></i></a>
                     </li>
-
+                
 
                 
                     <li class="social">
@@ -343,10 +351,11 @@
 
         </header>
         <div id="search">
-            <form role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <input type="search" value="" name="s" id="s" placeholder="Search"/>
-            </form>
-        </div>
+    <form role="search" id="searchform">
+        <input type="search" placeholder="Search"/>
+    </form>
+</div>
+
         <section class="margin">
             <div class="content">
                 <p class="switch">switch layout: <span id="grid">Grid</span> &bull; <span id="classic">Classic</span></p>
@@ -359,58 +368,94 @@
 
 
     <article>
+    
         
             
-                
-                    <a href="/standard/">
-                        <img src="/img/1.jpg" alt="1.jpg">
-                    </a>
-                
+                <a href="/standard/" class="noline">
+                    <img src="/img/1.jpg" alt="1.jpg">
+                </a>
             
         
-        <a href="/standard/"><h1>Standard Post</h1></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quo debitis eos deleniti laudantium quidem,...</p>
-    </article>
+    
+    
+        <span class="category">
+            standard
+        </span>
+    
+    <a href="/standard/">
+        <h1>Standard Post</h1>
+    </a>
+    <p class="post_content">Here you can see the basic post. No fancy type, no setting and the featured...</p>
+    <span class="date"><i class="fa fa-calendar"></i> February 10, 2015</span>
+</article>
+
 
     <article>
+    
         
             
-                
-                    <a href="/youtube/">
-                        <img src="http://img.youtube.com/vi/e0RFirBWQsE/0.jpg" alt="YouTube thumbnail">
-                    </a>
-                
+                <a href="/youtube/" class="noline">
+                    <img src="http://img.youtube.com/vi/e0RFirBWQsE/0.jpg" alt="YouTube thumbnail">
+                </a>
             
         
-        <a href="/youtube/"><h1>YouTube</h1></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusamus quisquam repellendus reiciendis rem, fuga...</p>
-    </article>
+    
+    
+        <span class="category">
+            video
+        </span>
+    
+    <a href="/youtube/">
+        <h1>YouTube</h1>
+    </a>
+    <p class="post_content">This is a youtube post type video. For a YouTube video, no embedding code is...</p>
+    <span class="date"><i class="fa fa-calendar"></i> February 09, 2015</span>
+</article>
+
 
     <article>
+    
         
             
-                
-                    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/188464611&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-                
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/188464611&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
             
         
-        <a href="/audio/"><h1>Audio</h1></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusamus quisquam repellendus reiciendis rem, fuga...</p>
-    </article>
+    
+    
+        <span class="category">
+            audio
+        </span>
+    
+    <a href="/audio/">
+        <h1>Audio</h1>
+    </a>
+    <p class="post_content">This audio post is displays without a sidebar and has the iframe set for the...</p>
+    <span class="date"><i class="fa fa-calendar"></i> February 08, 2015</span>
+</article>
+
 
     <article>
+    
         
             
-                
-                    <a href="/img/">
-                        <img src="/img/3.jpg" alt="3.jpg">
-                    </a>
-                
+                <a href="/img/" class="noline">
+                    <img src="/img/3.jpg" alt="3.jpg">
+                </a>
             
         
-        <a href="/img/"><h1>Image</h1></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusamus quisquam repellendus reiciendis rem, fuga...</p>
-    </article>
+    
+    
+        <span class="category">
+            image
+        </span>
+    
+    <a href="/img/">
+        <h1>Image</h1>
+    </a>
+    <p class="post_content">Here you see an image post in the standard layout, with sidebar. The Front Matter...</p>
+    <span class="date"><i class="fa fa-calendar"></i> February 07, 2015</span>
+</article>
+
 
 
                 </div>
@@ -421,9 +466,13 @@
             
             
                 
-                    <li><a href="/category/lifestyle">lifestyle</a></li>
+                    <li><a href="/category/video">video</a></li>
                 
-                    <li><a href="/category/photography">photography</a></li>
+                    <li><a href="/category/image">image</a></li>
+                
+                    <li><a href="/category/audio">audio</a></li>
+                
+                    <li><a href="/category/standard">standard</a></li>
                 
             
             
@@ -435,11 +484,19 @@
             
             
                 
-                    <li><a href="/tag/one">one</a></li>
+                    <li><a href="/tag/video">video</a></li>
                 
-                    <li><a href="/tag/two">two</a></li>
+                    <li><a href="/tag/iframe">iframe</a></li>
                 
-                    <li><a href="/tag/three">three</a></li>
+                    <li><a href="/tag/gallery">gallery</a></li>
+                
+                    <li><a href="/tag/image">image</a></li>
+                
+                    <li><a href="/tag/music">music</a></li>
+                
+                    <li><a href="/tag/soundcloud">soundcloud</a></li>
+                
+                    <li><a href="/tag/text">text</a></li>
                 
             
             
